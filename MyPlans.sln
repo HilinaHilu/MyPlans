@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlansApp", "MyPlansApp\MyPlansApp.csproj", "{EBE5F07A-0A7B-47BF-9748-BB9C6B69FF9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlansCore", "MyPlansCore\MyPlansCore.csproj", "{2409952D-3FAA-47CA-91AB-8E9B92D55713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlansAPI", "MyPlansAPI\MyPlansAPI.csproj", "{0E11B71D-5002-4F11-AB54-BE974B941964}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBE5F07A-0A7B-47BF-9748-BB9C6B69FF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE5F07A-0A7B-47BF-9748-BB9C6B69FF9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE5F07A-0A7B-47BF-9748-BB9C6B69FF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE5F07A-0A7B-47BF-9748-BB9C6B69FF9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2409952D-3FAA-47CA-91AB-8E9B92D55713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2409952D-3FAA-47CA-91AB-8E9B92D55713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2409952D-3FAA-47CA-91AB-8E9B92D55713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2409952D-3FAA-47CA-91AB-8E9B92D55713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E11B71D-5002-4F11-AB54-BE974B941964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E11B71D-5002-4F11-AB54-BE974B941964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E11B71D-5002-4F11-AB54-BE974B941964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E11B71D-5002-4F11-AB54-BE974B941964}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
