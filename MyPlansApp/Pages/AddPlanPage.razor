@@ -1,5 +1,52 @@
-﻿<h3>AddPlanPage</h3>
+﻿@page "/AddPlan"
 
+<h3>AddPlanPage</h3>
+<EditForm Model="@plan" OnvaldSubmit="@HandleValidSubmit">
+
+	<DataAnnotationsValidator />
+	<ValidationSummary />
+
+	<div class="shadow overflow-hidden sm:rounded-md bg-white dark:bg-black">
+		<div class="grid grid-cols-6 gap-6">
+			<div class="relative px-4 py-5 sm:p-6">
+				<h3>New Plan</h3>
+
+				<div class="col-span-6 sm:col-span-3">
+					<label for="titel">Titel:</label>
+					<InputText id="titel" class="form-control" @bind-Value="plan.Titlel" placeholder="Title" />
+				</div>
+
+				<div class="col-span-6 sm:col-span-3">
+					<label for="description">Description:</label>
+					<textarea id="description" class="form-control" @bind="plan.Description" placeholder="Description of the plan"> </textarea>
+				</div>
+				<div class="col-span-6 sm:col-span-3">
+					<label for="category">Category:</label>
+					<InputSelect id="category" class="form-control" @bind-Value="plan.category">
+						@foreach (var i in Enum.GetValues(typeof(Category)).Cast<Category>()) { 
+							<option value="@i">@i </option>
+						}
+					</InputSelect>
+				</div>
+
+				<div class="col-span-6 sm:col-span-3">
+					<label for="startDate">Start Dato:</label>
+					<InputDate id="startDate" class="form-control" @bind-Value="plan.start" />
+				</div>
+
+				<div class="col-span-6 sm:col-span-3">
+					<label for="EndDate">Afsluttes før:</label>
+					<InputDate id="EndDate" class="form-control" @bind-Value="plan.end" />
+				</div>
+
+
+			</div>	
+		</div>
+	</div>
+</EditForm>
 @code {
+	private Plan plan = new Plan();
 
+	private void HandleValidSubmit() { }
 }
+
