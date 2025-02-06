@@ -2,7 +2,7 @@
 @inject IPlanService planService
 
 <h3>AddPlanPage</h3>
-<EditForm Model="@plan" OnvaldSubmit="@HandleValidSubmit">
+<EditForm Model="@plan" OnValidSubmit="@HandleValidSubmit">
 
 	<DataAnnotationsValidator />
 	<ValidationSummary />
@@ -42,10 +42,9 @@
 
 				<div class="mt-4 px-4 py-3 bg-gray-50 dark:bg-gray-900 text-right sm:px-6">
 					<div class="flex justify-between items-center">
-						<button type="submit" class="btn btn-primary">Save Plan</button>
+						<button type="submit" class="btn btn-primary">Submit</button>
 					</div>
 				</div>
-
 			</div>	
 		</div>
 	</div>

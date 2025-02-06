@@ -10,16 +10,16 @@ namespace MyPlansCore.Modul
     {
         public string Titel { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public Category category { get; set; } = Category.Realxing;
+        public Category category { get; set; } = Category.Relaxing;
         public DateTime start { get; set; } = DateTime.Now;
-        public DateTime end { get; set; } = DateTime.Now;
-     
+        public DateTime end { get; set; } = DateTime.Now; 
     }
 
     public enum Category { 
-    School,Work,Gym,Studying,Realxing
-
+        School = 0,
+        Work = 1,
+        Gym = 2,
+        Studying = 3,
+        Relaxing = 4
     }
-
-
 }

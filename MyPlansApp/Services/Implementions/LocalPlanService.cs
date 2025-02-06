@@ -15,15 +15,23 @@ namespace MyPlansApp.Services.Implementions
 
         public async Task addPlanAsync(Plan plan)
         {
-            List<Plan> plans = await localStorageService.GetItemAsync<List<Plan>>("plans") ?? new List<Plan>();
+            List<Plan> plans = new List<Plan>();
+            List<Plan> result = await localStorageService.GetItemAsync<List<Plan>>("plans") ?? new List<Plan>();
+            if (result != null) {
+                plans = result;
+            }
             plans.Add(plan);
             await localStorageService.SetItemAsync("plans", plans);
                 
         }
 
-        public Task<List<Plan>> getAllPlansAsync()
+        public async Task<List<Plan>> getAllPlansAsync()
         {
-            throw new NotImplementedException();
+            var result = await localStorageService.GetItemAsync<List<Plan>>("plans");
+            if (result != null) {
+                return result;
+            }
+            return new List<Plan>();
         }
     }
 }
