@@ -8,11 +8,11 @@ namespace MyPlansCore.Modul
 {
    public class Plan
     {
-        public string Titlel { get; set; } = string.Empty;
+        public string Titel { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public Category category {  get; set; } 
-        public DateTime start { get; set; }
-        public DateTime end { get; set; }
+        public Category category { get; set; } = Category.Realxing;
+        public DateTime start { get; set; } = DateTime.Now;
+        public DateTime end { get; set; } = DateTime.Now;
      
     }
 
