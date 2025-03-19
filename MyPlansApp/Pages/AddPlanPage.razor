@@ -49,11 +49,7 @@
 		</div>
 	</div>
 </EditForm>
-@if (succesfullyAdded) {
-	<div>DET VIRKER!!!!</div>
-}
 @code {
-	private bool succesfullyAdded = false;
 	private Plan plan = new Plan();
 	private DateOnly StartDay = new DateOnly();
 	private DateOnly EndDay = new DateOnly();
@@ -61,7 +57,7 @@
 
 	private async Task HandleValidSubmit() {
 		await planService.addPlanAsync(plan);
-		succesfullyAdded = true;
+		
 		plan = new();
 	}
 }

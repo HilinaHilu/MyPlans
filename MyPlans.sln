@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlansCore", "MyPlansCore\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlansAPI", "MyPlansAPI\MyPlansAPI.csproj", "{0E11B71D-5002-4F11-AB54-BE974B941964}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlansMinimalAPI", "MyPlansMinimalAPI\MyPlansMinimalAPI.csproj", "{6D37569B-D237-4C20-9999-6AABEB2D7C1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0E11B71D-5002-4F11-AB54-BE974B941964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E11B71D-5002-4F11-AB54-BE974B941964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E11B71D-5002-4F11-AB54-BE974B941964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D37569B-D237-4C20-9999-6AABEB2D7C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D37569B-D237-4C20-9999-6AABEB2D7C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D37569B-D237-4C20-9999-6AABEB2D7C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D37569B-D237-4C20-9999-6AABEB2D7C1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
